@@ -1,6 +1,18 @@
-﻿Console.WriteLine("Hello!");
-Console.WriteLine("What do you want to do.");
-Console.WriteLine("[S]ee all TODO's");
-Console.WriteLine("[A]dd a TODO");
-Console.WriteLine("[R]emove a TODO");
-Console.WriteLine("[E]xit");
+﻿// To make a TODO list
+Console.WriteLine("Hello!");
+
+// Reference Type
+string myName = "Durgesh";
+
+// Defining or setting up variable
+string petName;
+
+// Initialize Variable
+petName = "Doggy";
+
+System.Console.WriteLine($"Pet name is {petName}");
+
+// Re-Initialize Variable
+petName = "Doggy2";
+
+Console.WriteLine($"My secong pet name is {petName}");  
