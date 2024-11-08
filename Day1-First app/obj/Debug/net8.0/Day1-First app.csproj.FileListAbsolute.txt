@@ -1,0 +1,14 @@
+/Users/durgeshjoshi/Desktop/Learnings/C#_Learning/C#_Learn/Day1-First app/bin/Debug/net8.0/Day1-First app
+/Users/durgeshjoshi/Desktop/Learnings/C#_Learning/C#_Learn/Day1-First app/bin/Debug/net8.0/Day1-First app.deps.json
+/Users/durgeshjoshi/Desktop/Learnings/C#_Learning/C#_Learn/Day1-First app/bin/Debug/net8.0/Day1-First app.runtimeconfig.json
+/Users/durgeshjoshi/Desktop/Learnings/C#_Learning/C#_Learn/Day1-First app/bin/Debug/net8.0/Day1-First app.dll
+/Users/durgeshjoshi/Desktop/Learnings/C#_Learning/C#_Learn/Day1-First app/bin/Debug/net8.0/Day1-First app.pdb
+/Users/durgeshjoshi/Desktop/Learnings/C#_Learning/C#_Learn/Day1-First app/obj/Debug/net8.0/Day1-First app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/durgeshjoshi/Desktop/Learnings/C#_Learning/C#_Learn/Day1-First app/obj/Debug/net8.0/Day1-First app.AssemblyInfoInputs.cache
+/Users/durgeshjoshi/Desktop/Learnings/C#_Learning/C#_Learn/Day1-First app/obj/Debug/net8.0/Day1-First app.AssemblyInfo.cs
+/Users/durgeshjoshi/Desktop/Learnings/C#_Learning/C#_Learn/Day1-First app/obj/Debug/net8.0/Day1-First app.csproj.CoreCompileInputs.cache
+/Users/durgeshjoshi/Desktop/Learnings/C#_Learning/C#_Learn/Day1-First app/obj/Debug/net8.0/Day1-First app.dll
+/Users/durgeshjoshi/Desktop/Learnings/C#_Learning/C#_Learn/Day1-First app/obj/Debug/net8.0/refint/Day1-First app.dll
+/Users/durgeshjoshi/Desktop/Learnings/C#_Learning/C#_Learn/Day1-First app/obj/Debug/net8.0/Day1-First app.pdb
+/Users/durgeshjoshi/Desktop/Learnings/C#_Learning/C#_Learn/Day1-First app/obj/Debug/net8.0/Day1-First app.genruntimeconfig.cache
+/Users/durgeshjoshi/Desktop/Learnings/C#_Learning/C#_Learn/Day1-First app/obj/Debug/net8.0/ref/Day1-First app.dll
