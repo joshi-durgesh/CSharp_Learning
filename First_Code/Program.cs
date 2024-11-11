@@ -43,7 +43,6 @@ Console.WriteLine("The sum of "+ numFirst + " and " + numSecond " is " + sum);
 // String Interpolation
 Console.WriteLine($"The sum of {numFirst} and {numSecond} is {sum}"); 
 
-*/
 
 
 // Simple sum calculator using double
@@ -61,3 +60,26 @@ double sum = firstNum + secondNum;
 sum = Math.Round(sum, 2);
 
 Console.WriteLine($"The sum of {firstNum} and {secondNum} is {sum}");
+
+
+/// Implicit conversion
+
+int myInt = 1234034543;
+double myDouble = myInt;
+long myLong = myInt;
+System.Console.WriteLine(myDouble);
+
+float myFloat = 123.432f;
+myDouble = myFloat;
+
+Console.WriteLine(myDouble);
+// Explicit Conversion
+
+long myLong = 1230425435345234324;
+int myInt = (int)myLong;
+*/
+double myDouble = 12.3242342342342342423423;
+float myFloat = (float)myDouble;
+
+int myInt = (int)myDouble;
+Console.WriteLine(myInt);
