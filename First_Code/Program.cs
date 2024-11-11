@@ -73,13 +73,27 @@ float myFloat = 123.432f;
 myDouble = myFloat;
 
 Console.WriteLine(myDouble);
+
 // Explicit Conversion
 
 long myLong = 1230425435345234324;
 int myInt = (int)myLong;
-*/
+
 double myDouble = 12.3242342342342342423423;
 float myFloat = (float)myDouble;
 
 int myInt = (int)myDouble;
 Console.WriteLine(myInt);
+*/
+
+// Conversion Helpers Parse and Convert
+
+string numString = "123";
+int numInt = int.Parse(numString);
+
+Console.WriteLine(numInt);
+
+string boolString = "true";
+bool myBool  = Convert.ToBoolean(boolString);
+
+Console.WriteLine(myBool);
