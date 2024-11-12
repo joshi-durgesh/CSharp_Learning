@@ -126,3 +126,11 @@ int num3  = int.Parse(Console.ReadLine());
 Console.WriteLine("Avrage of the 3 numbers is: " + (num1 + num2 + num3)/3);
 
 */
+
+// Stirng Formatting 
+int num1 = 12;
+int num2 = 34;
+
+int sum  = num1 + num2;
+
+Console.WriteLine("The sum of {0} and {1} is {2}.",num1,num2, sum);
