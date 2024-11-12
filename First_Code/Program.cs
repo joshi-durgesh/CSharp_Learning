@@ -84,7 +84,6 @@ float myFloat = (float)myDouble;
 
 int myInt = (int)myDouble;
 Console.WriteLine(myInt);
-*/
 
 // Conversion Helpers Parse and Convert
 
@@ -97,3 +96,15 @@ string boolString = "true";
 bool myBool  = Convert.ToBoolean(boolString);
 
 Console.WriteLine(myBool);
+*/
+
+//Implicitly Typed Variables
+
+var myNum = 32;
+var myName = "Durgesh";
+var num2 = "23";
+
+// Explicitly Typed Variables
+
+string myName1 = "Durgesh";
+int num3 = 23;
