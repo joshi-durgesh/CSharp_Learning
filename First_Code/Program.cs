@@ -96,7 +96,6 @@ string boolString = "true";
 bool myBool  = Convert.ToBoolean(boolString);
 
 Console.WriteLine(myBool);
-*/
 
 //Implicitly Typed Variables
 
@@ -108,3 +107,22 @@ var num2 = "23";
 
 string myName1 = "Durgesh";
 int num3 = 23;
+
+
+int num1 = 12;
+int num2 = 45;
+
+//concatnation
+Console.WriteLine("The sum of the num is: " + num1 + num2); // The sum of the num is: 1245
+
+// Operator order to solve this 
+Console.WriteLine("The sum the num is: " + (num1 + num2));
+
+Console.WriteLine("Enter a whole number: ");
+int num3  = int.Parse(Console.ReadLine());
+
+// Avrage of the three number
+
+Console.WriteLine("Avrage of the 3 numbers is: " + (num1 + num2 + num3)/3);
+
+*/
