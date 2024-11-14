@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//Decisions Making
+
+//Bool Datatype
+
+bool isRainy = false;
+bool haveUmbrella = true;
+
