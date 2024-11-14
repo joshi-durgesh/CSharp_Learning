@@ -2,6 +2,11 @@
 
 //Bool Datatype
 
-bool isRainy = false;
+bool isRainy = true;
 bool haveUmbrella = true;
 
+// If statement
+
+if(isRainy){
+    Console.WriteLine("It's rainy.");
+}
