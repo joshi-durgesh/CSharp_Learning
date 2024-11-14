@@ -1,5 +1,5 @@
 ﻿//Decisions Making
-
+/*
 //Bool Datatype
 
 bool isRainy = true;
@@ -31,4 +31,23 @@ if(isRainy){
 
 if (!isRainy || haveUmbrella){
     Console.WriteLine("I'm not getting Wet.");
+}
+*/
+
+//Equality Operator
+// == 
+// !=
+
+// else and else if statement
+
+int day =3;
+
+switch (day)
+{
+    case 1:
+        Console.WriteLine("Monday");
+        break;
+    default:
+        Console.WriteLine("Another day");
+        break;
 }
