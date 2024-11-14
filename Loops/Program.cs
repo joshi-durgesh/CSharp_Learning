@@ -14,7 +14,6 @@ for (int counter = 0; counter <= 10; ++counter)
 {
     Console.WriteLine("Counter "+ counter);
 }
-*/
 
 //Rocket simulation
 string rocket = "\r\n       |\r\n      ---\r\n     /   \\\r\n     |.o.|\r\n     _---_\r\n    //,,,\\\\\n";
@@ -26,3 +25,34 @@ for(int count = 5; count >=0; count--){
     if(count==0)Console.WriteLine("Rocket Landed Sucessfuly");
     Thread.Sleep(1000);
 }
+
+
+// While loop
+int counter = 0;
+while(counter  < 10){
+    Console.WriteLine("Counter " + counter);
+    counter++;
+}
+*/
+
+// Guess the number
+Random random = new Random();
+int randomNum = random.Next(1,11);
+Console.WriteLine("Guess the number from 1 to 10:");
+int guessedNum;
+bool isNum = int.TryParse(Console.ReadLine(), out guessedNum);
+
+int count = 0;
+
+while( guessedNum != randomNum){
+    if ( guessedNum < randomNum){
+        Console.WriteLine("You guessed low!");
+    }else{
+        Console.WriteLine("You guessed high!");
+    }
+    Console.WriteLine("Try again.");
+    int.TryParse(Console.ReadLine(), out guessedNum);
+    count++;
+}
+
+Console.WriteLine("You guessed it correct in {0} times.",count);
