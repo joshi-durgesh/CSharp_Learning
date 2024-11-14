@@ -32,7 +32,6 @@ if(isRainy){
 if (!isRainy || haveUmbrella){
     Console.WriteLine("I'm not getting Wet.");
 }
-*/
 
 //Equality Operator
 // == 
@@ -40,6 +39,15 @@ if (!isRainy || haveUmbrella){
 
 // else and else if statement
 
+if(condition){
+    statement
+} else if(){
+    statement
+}else{
+    statement
+}
+
+// switch statement
 int day =3;
 
 switch (day)
@@ -51,3 +59,4 @@ switch (day)
         Console.WriteLine("Another day");
         break;
 }
+*/
