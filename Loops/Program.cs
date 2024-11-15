@@ -56,7 +56,6 @@ while( guessedNum != randomNum){
 
 Console.WriteLine("You guessed it correct in {0} times.",count);
 
-*/
 
 //Do While Loop
 
@@ -67,3 +66,25 @@ do{
     Console.WriteLine("Count "+count);
     count++;
 }while(count<=10);
+*/
+
+//Crate a caculator to calculate avrage of the numbers
+
+double inputNum = 0;
+double totalInputCount = 0;
+int avgCount = 0;
+
+do{
+    Console.WriteLine("To stop execution type -1.");
+    Console.WriteLine("Or write a number:");
+    double.TryParse(Console.ReadLine(),out inputNum);
+    if(inputNum != -1){
+    avgCount++;
+    totalInputCount += inputNum;
+    }
+}while(inputNum != -1);
+
+if(avgCount != 0 && totalInputCount != -1){
+    double avrage = totalInputCount / avgCount;
+    Console.WriteLine("Avarage of {0} is {1}.",totalInputCount,avrage);
+}
