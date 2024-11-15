@@ -66,7 +66,6 @@ do{
     Console.WriteLine("Count "+count);
     count++;
 }while(count<=10);
-*/
 
 //Crate a caculator to calculate avrage of the numbers
 
@@ -87,4 +86,23 @@ do{
 if(avgCount != 0 && totalInputCount != -1){
     double avrage = totalInputCount / avgCount;
     Console.WriteLine("Avarage of {0} is {1}.",totalInputCount,avrage);
+}
+
+*/
+
+//Break and Continue
+//break
+Console.WriteLine("Break statement.");
+for (int i = 0; i < 10; i++)
+{
+    if(i==4) break;
+    Console.WriteLine(i);
+}
+
+// continue
+Console.WriteLine("\nContinue statement.");
+for (int i = 0; i < 10; i++)
+{
+    if(i == 4) continue;
+    Console.WriteLine(i);
 }
