@@ -33,7 +33,6 @@ while(counter  < 10){
     Console.WriteLine("Counter " + counter);
     counter++;
 }
-*/
 
 // Guess the number
 Random random = new Random();
@@ -56,3 +55,15 @@ while( guessedNum != randomNum){
 }
 
 Console.WriteLine("You guessed it correct in {0} times.",count);
+
+*/
+
+//Do While Loop
+
+int count = 1;
+
+Console.WriteLine("Count from 1 to 10");
+do{
+    Console.WriteLine("Count "+count);
+    count++;
+}while(count<=10);
