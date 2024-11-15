@@ -88,7 +88,6 @@ if(avgCount != 0 && totalInputCount != -1){
     Console.WriteLine("Avarage of {0} is {1}.",totalInputCount,avrage);
 }
 
-*/
 
 //Break and Continue
 //break
@@ -106,3 +105,39 @@ for (int i = 0; i < 10; i++)
     if(i == 4) continue;
     Console.WriteLine(i);
 }
+
+
+// Arrays 
+Console.WriteLine("Arrays");
+
+//declare an array
+int[] myIntArray = new int[5];
+
+// assign value to the array
+myIntArray[0] = 16;
+myIntArray[1] = 15;
+myIntArray[2] = 14;
+myIntArray[3] = 13;
+myIntArray[4] = 12;
+
+Console.WriteLine(myIntArray[3]);
+
+//declare an array and set the array value
+int[] myIntArray = [16, 15, 14, 13, 12, 11];
+Console.WriteLine(myIntArray[3]);
+
+// Array for weekdays
+
+string[] weekdays = ["Sun", "Mon","Tue","Wed","Thu","Fri","Sut"];
+
+// using length
+for( int i = 0; i < weekdays.Length; i++){
+    Console.WriteLine(weekdays[i]);
+}
+
+// foreach loop
+foreach(var day in weekdays){
+    Console.WriteLine(day);
+}
+*/
+
