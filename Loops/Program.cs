@@ -173,7 +173,6 @@ int [,,] my3dArrayDeclare = new int[2,2,2];
 my3dArrayDeclare[0,0,1] = 4;
 
 Console.WriteLine(my3dArrayDeclare[0,0,1]);
-*/
 
 //Initialize 3d array
 string[,,] my3dArray = {
@@ -187,3 +186,29 @@ string[,,] my3dArray = {
     }
 };
 Console.WriteLine(my3dArray[1,1,1]);
+
+int[] array = {1,2,3,4,5};
+foreach(int value in array){
+    Console.WriteLine(value);
+}
+
+*/
+
+int[,] array = {
+    {1,2,3},
+    {4,5,6},
+    {7,8,9}
+    
+};
+
+
+ for(int i =0; i < array.GetLength(0); i++){
+    int total = 0;
+    for(int j =0; j <array.Length/ array.GetLength(0) ; j++){
+        total += array[i,j];
+    }
+    Console.WriteLine(total);
+}
+
+
+
