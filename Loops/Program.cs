@@ -156,4 +156,34 @@ Console.WriteLine(my2dArray[1,0]);
 
 int[,] my2dArray = {{2,3},{4,5}};
 Console.WriteLine(my2dArray[0,0]);
+
+//Initialization
+string[,] my2dArray = {
+    {"0,0","0,1","0,2"},
+    {"1,0","1,1","1,2"},
+    {"2,0","2,1","2,2"}
+};
+
+Console.WriteLine(my2dArray[2,2]);
+
+// Declare an 3d array
+int [,,] my3dArrayDeclare = new int[2,2,2];
+
+// Assign value
+my3dArrayDeclare[0,0,1] = 4;
+
+Console.WriteLine(my3dArrayDeclare[0,0,1]);
 */
+
+//Initialize 3d array
+string[,,] my3dArray = {
+    {
+        {"0,0,0","0,0,1"},
+        {"0,1,0","0,1,1"}
+    },
+    {
+        {"1,0,0","1,0,1"},
+        {"1,1,0","1,1,1"}
+    }
+};
+Console.WriteLine(my3dArray[1,1,1]);
