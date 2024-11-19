@@ -139,5 +139,21 @@ for( int i = 0; i < weekdays.Length; i++){
 foreach(var day in weekdays){
     Console.WriteLine(day);
 }
-*/
 
+// 2d arrays
+// How to declare 2d array
+int[,] my2dArray = new int[2,2];
+
+// Assign value to the array
+my2dArray[0,0] = 2;
+my2dArray[0,1] = 4;
+my2dArray[1,0] = 6;
+my2dArray[1,1] = 8;
+
+Console.WriteLine(my2dArray[1,0]);
+
+// Declare an 2d array and set the array value
+
+int[,] my2dArray = {{2,3},{4,5}};
+Console.WriteLine(my2dArray[0,0]);
+*/
