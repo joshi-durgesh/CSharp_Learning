@@ -2,6 +2,8 @@
 
 internal class Program
 {
+    // Creating Field(or Instance variable or Global variable)
+    static int myResult;
     static void Main(string[] args)
     {
         // Taking inputs from user
@@ -10,22 +12,27 @@ internal class Program
         Console.Write("Enter second number: ");
         int num2 = int.Parse(Console.ReadLine());
 
-        int addition = Addition(num1, num2);
-        Console.WriteLine("The sum of the {0} and {1} is {2}. ",num1,num2,addition);
+        myResult = Addition(num1, num2);
+        Console.WriteLine("The sum of the {0} and {1} is {2}. ", num1, num2, myResult);
 
-        // Creating instance of program class
-        Program myProgram = new Program(); 
-
-        // Accessing Substraction with the help of program instance we created    
-        int substraction = myProgram.Substraction(num1, num2);
-        Console.WriteLine("The minus of the {0} and {1} is {2}. ",num1,num2,substraction);
+        // Accessing Substraction method with the help of program instance we created    
+        myResult = Substraction(num1, num2);
+        Console.WriteLine("The minus of the {0} and {1} is {2}. ", num1, num2, myResult);
     }
 
-    static int Addition(int num1, int num2){
-        return num1 + num2;
+
+    static int Addition(int num1, int num2)
+    {
+        myResult = num1 + num2;
+        return myResult;
     }
 
-    int Substraction(int num1, int num2){
-        return num1 - num2; 
+    static int Substraction(int num1, int num2)
+    {
+        myResult = num1 - num2;
+        return myResult;
     }
 }
+
+// Program myProgram = new Program(); 
+// we created instace of our program to use non static method inside main method
