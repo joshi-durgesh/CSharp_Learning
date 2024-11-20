@@ -2,12 +2,14 @@
 
 class Program
 {
+    static int days;
+    static int[] temperature;
     static void Main(string[] args)
     {
         Console.Write("Enter the number of days: ");
-        int days = int.Parse(Console.ReadLine());
+        days = int.Parse(Console.ReadLine());
 
-        int[] temprature = new int[days];
+        temperature = new int[days];
         string[] conditions = { "Sunny", "Cloudy", "Rainy", "Cold", };
         int[] weatherConditions = new int[days];
 
@@ -15,8 +17,8 @@ class Program
 
         for (int i = 0; i < days; i++)
         {
-            temprature[i] = random.Next(-10, 44);
-            if (temprature[i] < 10)
+            temperature[i] = random.Next(-10, 44);
+            if (temperature[i] < 10)
             {
                 weatherConditions[i] = 3;
                 continue;
@@ -27,7 +29,19 @@ class Program
 
         for (int i = 0; i < days; i++)
         {
-            Console.WriteLine($"Wheather condition at day {i + 1} is {conditions[weatherConditions[i]]} with temprature of {temprature[i]}");
+            Console.WriteLine($"Wheather condition at day {i + 1} is {conditions[weatherConditions[i]]} with temprature of {temperature[i]}");
         }
+
+        Console.WriteLine("Avrage temperature of the {0} days is {1} celcius.", days, CalculateAvrage(temperature));
+    }
+
+    static double CalculateAvrage(int[] temperatures)
+    {
+        double avrage = 0;
+        foreach (int temperature in temperatures)
+        {
+            avrage += temperature;
+        }
+        return avrage / days;
     }
 }
