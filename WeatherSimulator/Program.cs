@@ -33,8 +33,15 @@ class Program
         }
 
         Console.WriteLine("Avrage temperature of the {0} days is {1} celcius.", days, CalculateAvrage(temperature));
+
+        //Finding min and max of the temperature
+        Console.WriteLine("The min temperature in the {0} days is {1} degree celcius.", days, temperature.Min());
+
+        Console.WriteLine("And the max temperature in the {0} days is {1} degree celcius.", days, MaxTemp(temperature));
+
     }
 
+    // Calaculating the avrage of temperature on the basis of provided days
     static double CalculateAvrage(int[] temperatures)
     {
         double avrage = 0;
@@ -43,5 +50,19 @@ class Program
             avrage += temperature;
         }
         return avrage / days;
+    }
+
+    // Finding the max of the temperature from the temperature array manually
+    static int MaxTemp(int[] temperatures)
+    {
+        int max = 0;
+        foreach (int temperature in temperatures)
+        {
+            if (max < temperature)
+            {
+                max = temperature;
+            }
+        }
+        return max;
     }
 }
