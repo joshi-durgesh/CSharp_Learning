@@ -11,7 +11,7 @@ class Program
 
         temperature = new int[days];
         string[] conditions = { "Sunny", "Cloudy", "Rainy", "Cold", };
-        int[] weatherConditions = new int[days];
+        string[] weatherConditions = new string[days];
 
         Random random = new Random();
 
@@ -20,16 +20,15 @@ class Program
             temperature[i] = random.Next(-10, 44);
             if (temperature[i] < 10)
             {
-                weatherConditions[i] = 3;
+                weatherConditions[i] = conditions[3];
                 continue;
             }
-            weatherConditions[i] = random.Next(conditions.Length);
+            weatherConditions[i] = conditions[random.Next(conditions.Length)];
         }
-        // Console.WriteLine("Hello, World!");
 
         for (int i = 0; i < days; i++)
         {
-            Console.WriteLine($"Wheather condition at day {i + 1} is {conditions[weatherConditions[i]]} with temprature of {temperature[i]}");
+            Console.WriteLine($"Wheather condition at day {i + 1} is {weatherConditions[i]} with temprature of {temperature[i]}");
         }
 
         Console.WriteLine("Avrage temperature of the {0} days is {1} celcius.", days, CalculateAvrage(temperature));
@@ -38,6 +37,8 @@ class Program
         Console.WriteLine("The min temperature in the {0} days is {1} degree celcius.", days, temperature.Min());
 
         Console.WriteLine("And the max temperature in the {0} days is {1} degree celcius.", days, MaxTemp(temperature));
+
+        Console.WriteLine("The most common weather is {0}.", CommonWheather(weatherConditions));
 
     }
 
@@ -64,5 +65,30 @@ class Program
             }
         }
         return max;
+    }
+
+    // Finding most common wheather condition
+    static string CommonWheather(string[] conditions)
+    {
+        int count = 0;
+        string mostCommon = conditions[0];
+
+        for (int i = 0; i < conditions.Length; i++)
+        {
+            int tempCount = 0;
+            for (int j = 0; j < conditions.Length; j++)
+            {
+                if (conditions[j] == conditions[i])
+                {
+                    tempCount++;
+                }
+            }
+            if (tempCount > count)
+            {
+                count = tempCount;
+                mostCommon = conditions[i];
+            }
+        }
+        return mostCommon;
     }
 }
