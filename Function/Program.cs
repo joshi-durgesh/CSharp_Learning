@@ -3,7 +3,7 @@
 // Modifier returnType MethodName (Parameter){
 // Code Block
 //}
-
+/*
 // simple method 
 void PrintHello(){
     Console.WriteLine("Hello World!");
@@ -34,3 +34,6 @@ int num2 = int.Parse(Console.ReadLine());
 int sum =AdditionCalculator( num1, num2);
 Console.Write("The sum of the {0} and {1} is :",num1,num2);
 Console.WriteLine(sum);
+
+*/
+

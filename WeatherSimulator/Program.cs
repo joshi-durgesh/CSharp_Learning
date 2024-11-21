@@ -8,7 +8,6 @@ class Program
     {
         Console.Write("Enter the number of days: ");
 
-
         days = int.Parse(Console.ReadLine());
 
         temperature = new int[days];
