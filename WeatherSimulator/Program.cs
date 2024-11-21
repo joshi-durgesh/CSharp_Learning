@@ -7,6 +7,8 @@ class Program
     static void Main(string[] args)
     {
         Console.Write("Enter the number of days: ");
+
+
         days = int.Parse(Console.ReadLine());
 
         temperature = new int[days];
@@ -31,14 +33,18 @@ class Program
             Console.WriteLine($"Wheather condition at day {i + 1} is {weatherConditions[i]} with temprature of {temperature[i]}");
         }
 
-        Console.WriteLine("Avrage temperature of the {0} days is {1} celcius.", days, CalculateAvrage(temperature));
+        if (days > 0)
+        {
 
-        //Finding min and max of the temperature
-        Console.WriteLine("The min temperature in the {0} days is {1} degree celcius.", days, temperature.Min());
+            Console.WriteLine("Avrage temperature of the {0} days is {1} celcius.", days, CalculateAvrage(temperature));
 
-        Console.WriteLine("And the max temperature in the {0} days is {1} degree celcius.", days, MaxTemp(temperature));
+            //Finding min and max of the temperature
+            Console.WriteLine("The min temperature in the {0} days is {1} degree celcius.", days, temperature.Min());
 
-        Console.WriteLine("The most common weather is {0}.", CommonWheather(weatherConditions));
+            Console.WriteLine("And the max temperature in the {0} days is {1} degree celcius.", days, MaxTemp(temperature));
+
+            Console.WriteLine("The most common weather is {0}.", CommonWheather(weatherConditions));
+        }
 
     }
 
