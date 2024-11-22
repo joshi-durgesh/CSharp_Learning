@@ -8,18 +8,22 @@ namespace ClassApp
     public class Car
     {
 
-        // Member Variable
+        //! Member Variable
         // private hides the variable from other classes
         private string _model = "";
         private string _brand = "";
+
+        //! Properties
+        public string Model { get => _model; set => _model = value; }
+        public string Brand { get => _brand; set => _brand = value; }
 
         // ! Constructor
         // Constructor is called every time when class instance is created
         public Car(string brand, string model)
         {
-            _brand = brand;
-            _model = model;
-            Console.WriteLine($"The {_brand} car of model {_model} has been created.");
+            Model = brand;
+            Brand = model;
+            Console.WriteLine($"The {Brand} car of model {Brand} has been created.");
         }
 
     }
