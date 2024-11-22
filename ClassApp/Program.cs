@@ -8,6 +8,7 @@ class Program
         Car audi = new Car("Audi", "A3");
         Car bmw = new Car("BMW", "i7");
 
-        Console.WriteLine("Hello, from main program.");
+        audi.Brand = "       ";
+        Console.WriteLine("So car bran is " + audi.Brand);
     }
 }
