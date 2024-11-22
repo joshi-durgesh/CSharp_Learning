@@ -9,9 +9,10 @@ namespace ClassApp
     {
         // ! Constructor
         // Constructor is called every time when class instance is created
-        internal Car()
+        public Car()
         {
             Console.WriteLine("Car Object Instance has been created.");
         }
+
     }
 }
