@@ -70,5 +70,11 @@ namespace ClassApp
             IsLuxury = isLuxury;
         }
 
+        // ! Methods in classes
+        public void Drive()
+        {
+            Console.WriteLine($"I'm {Brand} and i'm driving.");
+        }
+
     }
 }
