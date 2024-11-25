@@ -32,5 +32,10 @@ class Program
 
         Console.WriteLine(person3.Name);
         Console.WriteLine(person3.ContactNumber);
+
+        //* Using Named Parameter
+
+        Customer person4 = new Customer(name: "ravi", address: "lacknow", "234234234");
+        Console.WriteLine(person4.Name);
     }
 }

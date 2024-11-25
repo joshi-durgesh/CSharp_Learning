@@ -33,6 +33,7 @@ namespace ClassApp
             Name = name;
         }
 
+        // Method to update varialbe 
         public void SetDetails(string name, string address, string contactNumber)
         {
             Name = name;
