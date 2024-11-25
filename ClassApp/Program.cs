@@ -12,21 +12,25 @@ class Program
 
         Console.WriteLine("So car brand is " + audi.Brand);
         Console.WriteLine("So car brand is " + bmw.Brand);
+        Car myAudi = new Car("Audi", "S8", false);
+        Car myBmw = new Car("BMW", "Q8", true);
 
+        myBmw.Drive();
+        myAudi.Drive();
+
+        */
         Customer person1 = new Customer("john", "vakanda", "2784234129");
         Customer person2 = new Customer("doe");
         Customer person3 = new Customer();
 
         Console.WriteLine(person2.Name);
         Console.WriteLine(person3.Name);
-        person3.Name = "Durgesh";
+        person3.Name = "adam";
         Console.WriteLine(person3.Name);
-        */
 
-        Car myAudi = new Car("Audi", "S8", false);
-        Car myBmw = new Car("BMW", "Q8", true);
+        person3.SetDetails("durgesh", "hyderabad", "24352304237");
 
-        myBmw.Drive();
-        myAudi.Drive();
+        Console.WriteLine(person3.Name);
+        Console.WriteLine(person3.ContactNumber);
     }
 }
