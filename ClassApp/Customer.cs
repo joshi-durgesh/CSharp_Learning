@@ -11,6 +11,14 @@ namespace ClassApp
         public string Address { get; set; }
         public string ContactNumber { get; set; }
 
+        // * Default Constructor
+        public Customer()
+        {
+            Name = "N/A";
+            Address = "N/A";
+            ContactNumber = "N/A";
+        }
+
         // * Custom constructor with multiple parameters
         public Customer(string name, string address, string contactNumber)
         {

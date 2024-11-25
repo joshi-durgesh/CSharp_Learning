@@ -16,7 +16,11 @@ class Program
 
         Customer person1 = new Customer("john", "vakanda", "2784234129");
         Customer person2 = new Customer("doe");
+        Customer person3 = new Customer();
 
         Console.WriteLine(person2.Name);
+        Console.WriteLine(person3.Name);
+        person3.Name = "Durgesh";
+        Console.WriteLine(person3.Name);
     }
 }
