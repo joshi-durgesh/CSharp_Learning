@@ -12,6 +12,7 @@ namespace ClassApp
         // private hides the variable from other classes
         private string _model = "";
         private string _brand = "";
+        private bool _isLuxury = false;
 
         //! Properties
         public string Model
@@ -31,7 +32,17 @@ namespace ClassApp
         }
         public string Brand
         {
-            get => _brand;
+            get
+            {
+                if (_isLuxury)
+                {
+                    return _brand + " - Luxury eiditon.";
+                }
+                else
+                {
+                    return _brand;
+                }
+            }
             set
             {
                 if (string.IsNullOrEmpty(value.Trim()))
@@ -46,13 +57,20 @@ namespace ClassApp
             }
         }
 
+        public bool IsLuxury
+        {
+            get => _isLuxury;
+            set => _isLuxury = value;
+        }
+
         // ! Constructor
         // Constructor is called every time when class instance is created
-        public Car(string brand, string model)
+        public Car(string brand, string model, bool isLuxury)
         {
-            Model = brand;
-            Brand = model;
-            Console.WriteLine($"The {Brand} car of model {Brand} has been created.");
+            Model = model;
+            Brand = brand;
+            Console.WriteLine($"The {Brand} car of model {Model} has been created.");
+            IsLuxury = isLuxury;
         }
 
     }
