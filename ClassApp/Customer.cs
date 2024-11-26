@@ -11,27 +11,37 @@ namespace ClassApp
         public string Address { get; set; }
         public string ContactNumber { get; set; }
 
+        // * Creating Id
+        private static int nextId = 0;
+        // * Readonly Field
+        private readonly int _id;
+        // * Readonly Property
+        public int Id { get { return _id; } }
+
         // * Default Constructor
         public Customer()
         {
+            _id = nextId++;
             Name = "N/A";
             Address = "N/A";
             ContactNumber = "N/A";
         }
 
         // * Custom constructor with multiple parameters
-        public Customer(string name, string address, string contactNumber)
+        public Customer(string name, string address = "NA", string contactNumber = "NA")
         {
+            _id = nextId++;
+
             Name = name;
             Address = address;
             ContactNumber = contactNumber;
         }
 
         // * Custom constructor with single parameters
-        public Customer(string name)
-        {
-            Name = name;
-        }
+        // public Customer(string name)
+        // {
+        //     Name = name;
+        // }
 
         // Method to update varialbe 
         public void SetDetails(string name, string address, string contactNumber)
