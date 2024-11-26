@@ -60,6 +60,9 @@ class Program
 
         customer4 = new Customer();
         Console.WriteLine(customer4.Id);
+        customer4.Password = "password";
+        //! Can not get the password
+        // Console.WriteLine(customer4.Password);
 
     }
 }

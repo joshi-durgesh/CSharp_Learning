@@ -18,6 +18,12 @@ namespace ClassApp
         // * Readonly Property
         public int Id { get { return _id; } }
 
+        // * password
+        private string _password;
+
+        //* Writeonly property
+        public string Password { set { _password = value; } }
+
         // * Default Constructor
         public Customer()
         {
@@ -25,6 +31,7 @@ namespace ClassApp
             Name = "N/A";
             Address = "N/A";
             ContactNumber = "N/A";
+            Password = "N/a";
         }
 
         // * Custom constructor with multiple parameters
@@ -35,6 +42,7 @@ namespace ClassApp
             Name = name;
             Address = address;
             ContactNumber = contactNumber;
+            Password = "";
         }
 
         // * Custom constructor with single parameters
