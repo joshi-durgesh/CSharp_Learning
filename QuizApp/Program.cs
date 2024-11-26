@@ -4,14 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Questions[] questions = new Questions[]{
+        Questions[] questObj = new Questions[]{
             new Questions("What is the capital of india?",
             new string[] { "Kolkata", "Mumbai","Delhi","Punjab"},
             2)
         };
 
-        Quiz quiz = new Quiz(questions);
-        quiz.DisplayQuestions(questions[0]);
+        Quiz quiz = new Quiz(questObj);
+        quiz.DisplayQuestions(questObj[0]);
 
     }
 }

@@ -9,9 +9,10 @@ namespace QuizApp
     {
         private Questions[] questions;
 
-        public Quiz(Questions[] questions)
+        public Quiz(Questions[] quest)
         {
-            this.questions = questions;
+            this.questions = quest;
+
         }
         public void DisplayQuestions(Questions questions)
         {
