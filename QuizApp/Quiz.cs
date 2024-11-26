@@ -13,5 +13,9 @@ namespace QuizApp
         {
             this.questions = questions;
         }
+        public void DisplayQuestions(Questions questions)
+        {
+            Console.WriteLine(questions.QuestionText);
+        }
     }
 }
