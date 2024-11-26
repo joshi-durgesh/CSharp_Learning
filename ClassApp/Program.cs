@@ -41,7 +41,6 @@ class Program
         // * Coding exrecise solution
         CodingExercise codingExercise = new CodingExercise("Read-Only Property Value");
         Console.WriteLine(codingExercise.FieldValue);
-        */
 
         Customer customer1 = new Customer();
         Customer customer2 = new Customer(name: "durgesh");
@@ -63,6 +62,7 @@ class Program
         customer4.Password = "password";
         //! Can not get the password
         // Console.WriteLine(customer4.Password);
+        */
 
     }
 }
