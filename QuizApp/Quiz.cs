@@ -24,6 +24,7 @@ namespace QuizApp
             Console.WriteLine("╚╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╝");
             Console.ResetColor();
             int questionNumber = 1;
+            int correctAns = 0;
             foreach (Questions quest in questions)
             {
                 DisplayQuestions(quest, questionNumber++);
@@ -31,8 +32,9 @@ namespace QuizApp
                 if (quest.IsCorrectAnswer(userInput))
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("Correct.\n");
+                    Console.WriteLine("Correct answer.\n");
                     Console.ResetColor();
+                    correctAns++;
                 }
                 else
                 {
@@ -41,13 +43,14 @@ namespace QuizApp
                     Console.ResetColor();
                 }
             }
+            Console.WriteLine("You entered {0} correct answers", correctAns);
 
         }
 
         private void DisplayQuestions(Questions questions, int questNum)
         {
 
-            Console.Write($"Question {questNum}.");
+            Console.Write($"Question {questNum}. ");
             Console.WriteLine(questions.QuestionText);
 
             for (int i = 0; i < questions.Answers.Length; i++)
