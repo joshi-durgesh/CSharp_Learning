@@ -9,21 +9,45 @@ namespace QuizApp
     public class Quiz
     {
         private Questions[] questions;
-        private Questions checkingAns;
 
         public Quiz(Questions[] quest)
         {
             this.questions = quest;
 
         }
-        public void DisplayQuestions(Questions questions)
+
+        public void StartQuiz()
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("╔╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╗");
-            Console.WriteLine("╢                     Questions                       ╟");
+            Console.WriteLine("╢                 Welcome to the Quiz!                ╟");
             Console.WriteLine("╚╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╝");
             Console.ResetColor();
-            Console.WriteLine();
+            int questionNumber = 1;
+            foreach (Questions quest in questions)
+            {
+                DisplayQuestions(quest, questionNumber++);
+                int userInput = GetUserChoice();
+                if (quest.IsCorrectAnswer(userInput))
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Correct.\n");
+                    Console.ResetColor();
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Wrong! Correct answer is {0}.\n", quest.Answers[quest.CorrectAnswerIndex]);
+                    Console.ResetColor();
+                }
+            }
+
+        }
+
+        private void DisplayQuestions(Questions questions, int questNum)
+        {
+
+            Console.Write($"Question {questNum}.");
             Console.WriteLine(questions.QuestionText);
 
             for (int i = 0; i < questions.Answers.Length; i++)
@@ -34,22 +58,7 @@ namespace QuizApp
                 Console.ResetColor();
                 Console.WriteLine("." + questions.Answers[i]);
             }
-
-            // GetUserChoice();
-            if (GetUserChoice() == questions.CorrectAnswerIndex)
-            {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Correct Answer");
-                Console.ResetColor();
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Wrong Answer");
-                Console.ResetColor();
-            }
-
-
+            Console.WriteLine();
         }
 
         private int GetUserChoice()
