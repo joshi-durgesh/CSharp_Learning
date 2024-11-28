@@ -4,9 +4,23 @@ class Program
 {
     static void Main(string[] args)
     {
-        List<int> numbers = new List<int>();
-        numbers.Add(1);
-        numbers.Add(2);
+
+        // Declaring List
+        List<string> colors = new List<string>();
+
+        // Adding values
+        colors.Add("red");
+        colors.Add("blue");
+        colors.Add("green");
+
+        Console.WriteLine("Current colors in list.");
+
+        // Accessing values with foreach loop
+        foreach (string color in colors)
+        {
+            Console.WriteLine(color);
+        }
+
 
     }
 }
