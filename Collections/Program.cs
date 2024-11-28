@@ -12,7 +12,21 @@ class Program
         colors.Add("red");
         colors.Add("blue");
         colors.Add("green");
+        colors.Add("red");
 
+        PrintColor(colors);
+
+        // Removing values from list
+        colors.Remove("red"); // it will remove first occuring value
+
+        PrintColor(colors);
+
+
+    }
+
+    // * Method for printing color
+    static void PrintColor(List<string> colors)
+    {
         Console.WriteLine("Current colors in list.");
 
         // Accessing values with foreach loop
@@ -20,7 +34,5 @@ class Program
         {
             Console.WriteLine(color);
         }
-
-
     }
 }
