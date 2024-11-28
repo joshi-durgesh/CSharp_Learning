@@ -17,7 +17,8 @@ class Program
         PrintColor(colors);
 
         // Removing values from list
-        colors.Remove("red"); // it will remove first occuring value
+        // colors.Remove("red"); // it will remove first occuring value
+        RemoveAll(colors, "red");
 
         PrintColor(colors);
 
@@ -33,6 +34,15 @@ class Program
         foreach (string color in colors)
         {
             Console.WriteLine(color);
+        }
+    }
+
+    // * Method for removing multiple 
+    static void RemoveAll(List<string> colors, string color)
+    {
+        while (colors.Remove(color))
+        {
+            colors.Remove(color);
         }
     }
 }
