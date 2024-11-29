@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic;
+﻿using System.Reflection.Metadata.Ecma335;
+using Microsoft.VisualBasic;
 
 namespace Collections;
 
@@ -26,7 +27,6 @@ class Program
         RemoveAll(colors, "red");
 
         PrintColor(colors);
-        */
 
         // Initializing
         List<int> numbers = [8, 32, 4, 10, 2, 6, 45];
@@ -61,6 +61,14 @@ class Program
                 Console.WriteLine(num);
             }
         }
+        */
+
+        // Complex data list
+        // ComplexObject complexObject = new ComplexObject();
+        List<ComplexObject> complexObjects = new List<ComplexObject> { new ComplexObject { Name = "Orange", Price = 60, Quantity = "kg" } };
+
+
+        complexObjects.Add(new ComplexObject { Name = "Apple", Price = 180, Quantity = "kg" });
 
     }
 
