@@ -1,4 +1,6 @@
-﻿namespace Collections;
+﻿using Microsoft.VisualBasic;
+
+namespace Collections;
 
 class Program
 {
@@ -14,7 +16,6 @@ class Program
                 colors.Add("blue");
                 colors.Add("green");
                 colors.Add("red");
-        */
         // * initializing list
         List<string> colors = ["red", "green", "blue", "red"];
 
@@ -25,28 +26,53 @@ class Program
         RemoveAll(colors, "red");
 
         PrintColor(colors);
+        */
+
+        // Initializing
+        List<int> numbers = [8, 32, 4, 10, 2, 6, 45];
+
+        Console.WriteLine("Unsorted list items.");
+        PrintAny(numbers);
+
+        // Sort list 
+        numbers.Sort();
+
+        Console.WriteLine("Sorted list items.");
+        PrintAny(numbers);
 
 
-    }
 
-    // * Method for printing color
-    static void PrintColor(List<string> colors)
-    {
-        Console.WriteLine("Current colors in list.");
-
-        // Accessing values with foreach loop
-        foreach (string color in colors)
+        // method for printing numbers in list
+        void PrintAny(List<int> nums)
         {
-            Console.WriteLine(color);
+            foreach (int num in nums)
+            {
+                Console.WriteLine(num);
+            }
         }
+
     }
 
-    // * Method for removing multiple 
-    static void RemoveAll(List<string> colors, string color)
-    {
-        while (colors.Remove(color))
+    /*
+        // * Method for printing color
+        static void PrintColor(List<string> colors)
         {
-            colors.Remove(color);
+            Console.WriteLine("Current colors in list.");
+
+            // Accessing values with foreach loop
+            foreach (string color in colors)
+            {
+                Console.WriteLine(color);
+            }
         }
-    }
+
+        // * Method for removing multiple 
+        static void RemoveAll(List<string> colors, string color)
+        {
+            while (colors.Remove(color))
+            {
+                colors.Remove(color);
+            }
+        }
+        */
 }
