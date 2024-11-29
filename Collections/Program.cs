@@ -40,7 +40,14 @@ class Program
         Console.WriteLine("Sorted list items.");
         PrintAny(numbers);
 
+        //Using Predicate with FindAll
+        // predicate is a method that takes input and return true or false
+        Predicate<int> isGreaterEqualTen = t => t >= 10;
 
+        // Finding in list
+        List<int> higherEqualTen = numbers.FindAll(isGreaterEqualTen);
+        Console.WriteLine("Numbers in list greater and equal to 10.");
+        PrintAny(higherEqualTen);
 
         // method for printing numbers in list
         void PrintAny(List<int> nums)
