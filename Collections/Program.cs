@@ -5,14 +5,18 @@ class Program
     static void Main(string[] args)
     {
 
-        // Declaring List
-        List<string> colors = new List<string>();
+        /*
+                // Declaring List
+                List<string> colors = new List<string>();
 
-        // Adding values
-        colors.Add("red");
-        colors.Add("blue");
-        colors.Add("green");
-        colors.Add("red");
+                // Adding values
+                colors.Add("red");
+                colors.Add("blue");
+                colors.Add("green");
+                colors.Add("red");
+        */
+        // * initializing list
+        List<string> colors = ["red", "green", "blue", "red"];
 
         PrintColor(colors);
 
