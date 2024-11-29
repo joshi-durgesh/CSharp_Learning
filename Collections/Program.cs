@@ -40,6 +40,10 @@ class Program
         Console.WriteLine("Sorted list items.");
         PrintAny(numbers);
 
+        // Any() to check if our list meets that criteria or not based on that it will return true or false
+        bool isGreaterTwenty = numbers.Any(n => n > 20);
+        Console.WriteLine(isGreaterTwenty);
+
         //Using Predicate with FindAll
         // predicate is a method that takes input and return true or false
         Predicate<int> isGreaterEqualTen = t => t >= 10;
